@@ -1,1 +1,9 @@
-
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:xBrainTestDB
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
