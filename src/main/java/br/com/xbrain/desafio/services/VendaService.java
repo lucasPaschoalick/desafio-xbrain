@@ -6,8 +6,8 @@ import br.com.xbrain.desafio.repository.VendaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-@RequiredArgsConstructor
 @Service
+@RequiredArgsConstructor
 public class VendaService {
     private final VendaRepository vendaRepository;
 
