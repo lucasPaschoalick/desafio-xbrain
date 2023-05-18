@@ -10,7 +10,7 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import static io.restassured.RestAssured.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class CriarVendaRequestDTOITest {
+public class VendaControllerITest {
 
     @LocalServerPort
     private int port;

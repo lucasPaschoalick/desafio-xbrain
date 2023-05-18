@@ -31,11 +31,13 @@ public class VendaController {
     }
 
     @GetMapping("/vendedores")
-    public List<VendedorDTO> listarVendedores(
+    public ResponseEntity <List<VendedorDTO>> listarVendedores(
         @RequestParam("dataInicio") @DateTimeFormat(pattern = "dd/MM/yyyy") LocalDate dataInicio,
         @RequestParam("dataFim") @DateTimeFormat(pattern = "dd/MM/yyyy") LocalDate dataFim) {
 
-        return vendedorService.listarVendedores(dataInicio, dataFim);
+        List<VendedorDTO> vendedores = vendedorService.listarVendedores(dataInicio, dataFim);
+
+        return ResponseEntity.ok(vendedores);
     }
 
 }
